@@ -23,6 +23,12 @@ public class restauranteDTO {
         this.descricao = descricao;
         this.preco = preco;
     }
+    public void setDescricao(String descricao) {
+        this.descricao = descricao;
+    }
+    public String getDescricao() {
+        return descricao;
+    }
 
     public long getId() {
         return id;
