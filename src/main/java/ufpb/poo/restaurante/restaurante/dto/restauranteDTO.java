@@ -8,18 +8,20 @@ public class restauranteDTO {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
-    private String nome;
-    private String preco;
     private String photo;
+    private String nome;
+    private String descricao;
+    private String preco;
 
     public restauranteDTO() {
     }
 
-    public restauranteDTO(long id, String nome, String preco, String photo) {
+    public restauranteDTO(long id, String photo, String nome, String descricao, String preco) {
         this.id = id;
-        this.nome = nome;
-        this.preco = preco;
         this.photo = photo;
+        this.nome = nome;
+        this.descricao = descricao;
+        this.preco = preco;
     }
 
     public long getId() {
