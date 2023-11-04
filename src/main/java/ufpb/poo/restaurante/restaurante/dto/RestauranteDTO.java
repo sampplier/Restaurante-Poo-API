@@ -4,7 +4,7 @@ import jakarta.persistence.*;
 
 @Entity
 @Table(name = "restaurante")
-public class restauranteDTO {
+public class RestauranteDTO {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
@@ -17,10 +17,10 @@ public class restauranteDTO {
         return descricao;
     }
 
-    public restauranteDTO() {
+    public RestauranteDTO() {
     }
 
-    public restauranteDTO(long id, String photo, String nome, String descricao, String preco) {
+    public RestauranteDTO(long id, String photo, String nome, String descricao, String preco) {
         this.id = id;
         this.photo = photo;
         this.nome = nome;
@@ -31,6 +31,7 @@ public class restauranteDTO {
     public void setDescricao(String descricao) {
         this.descricao = descricao;
     }
+    //id photo nome descrição preco
 
     public long getId() {
         return id;
