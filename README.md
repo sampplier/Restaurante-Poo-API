@@ -1,3 +1,2 @@
-# SimpleSpringAPITest
-Teste de uma API Simples com Spring Boot
-Contendo GET, PUT, POST e DELETE
+# Restaurante POO
+APIRestful Spring para o projeto de um restaurante para a disciplina de POO
