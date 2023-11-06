@@ -11,6 +11,7 @@ import java.util.List;
 
 @Controller
 @RequestMapping(value = "/restaurante",produces = MediaType.APPLICATION_JSON_VALUE)
+@CrossOrigin(origins = "*")
 
 public class RestauranteController {
     @Autowired
