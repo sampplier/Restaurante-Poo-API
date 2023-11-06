@@ -11,7 +11,7 @@ import java.util.List;
 
 @Controller
 @RequestMapping(value = "/restaurante",produces = MediaType.APPLICATION_JSON_VALUE)
-
+@CrossOrigin(origins = {"http://localhost:3000", "https://front-poo-five.vercel.app"})
 public class RestauranteController {
     @Autowired
     private RestauranteFacade restauranteFacade;
