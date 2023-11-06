@@ -11,7 +11,6 @@ import org.springframework.web.bind.annotation.CrossOrigin;
 import java.util.List;
 
 @Controller
-@CrossOrigin(origins = "http://localhost:3000")
 @RequestMapping(value = "/restaurante",produces = MediaType.APPLICATION_JSON_VALUE)
 @CrossOrigin(origins = {"http://localhost:3000", "https://front-poo-five.vercel.app"})
 public class RestauranteController {
