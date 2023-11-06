@@ -16,17 +16,17 @@ import java.util.List;
 public class RestauranteController {
     @Autowired
     private RestauranteFacade restauranteFacade;
-    @PostMapping
+    @PostMapping("/postar")
     @ResponseBody
     public RestauranteDTO criar(@RequestBody RestauranteDTO restauranteDTO){
         return restauranteFacade.criar(restauranteDTO);
     }
-    @PutMapping("/{restauranteId}")
+    @PutMapping("/editar/{restauranteId}")
     @ResponseBody
     public RestauranteDTO atualizar(@PathVariable("restauranteId") Long restauranteId, @RequestBody RestauranteDTO restauranteDTO){
         return restauranteFacade.atualizar(restauranteDTO, restauranteId);
     }
-    @GetMapping
+    @GetMapping("/buscar")
     @ResponseBody
     public List<RestauranteDTO> getAll(){
         return restauranteFacade.getAll();
@@ -36,7 +36,7 @@ public class RestauranteController {
     public RestauranteDTO getById(@PathVariable("restauranteId") Long restauranteId){
         return restauranteFacade.getById(restauranteId);
     }
-    @DeleteMapping("/{restauranteId}")
+    @DeleteMapping("/editar/{restauranteId}")
     @ResponseBody
     public String deletar(@PathVariable("restauranteId") Long restauranteId){
         return restauranteFacade.delete(restauranteId);

@@ -1,7 +1,7 @@
 package ufpb.poo.restaurante.restaurante.facade;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import ufpb.poo.restaurante.restaurante.RepoJPA.RepoJPA;
+import ufpb.poo.restaurante.restaurante.repoJPA.RepoJPA;
 import ufpb.poo.restaurante.restaurante.dto.RestauranteDTO;
 import org.springframework.stereotype.Service;
 

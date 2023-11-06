@@ -1,4 +1,4 @@
-package ufpb.poo.restaurante.restaurante.RepoJPA;
+package ufpb.poo.restaurante.restaurante.repoJPA;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
