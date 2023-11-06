@@ -11,7 +11,7 @@ public class RestauranteDTO {
     private String photo;
     private String nome;
     private String descricao;
-    private String preco;
+    private double preco;
 
     public String getDescricao() {
         return descricao;
@@ -20,7 +20,7 @@ public class RestauranteDTO {
     public RestauranteDTO() {
     }
 
-    public RestauranteDTO(long id, String photo, String nome, String descricao, String preco) {
+    public RestauranteDTO(long id, String photo, String nome, String descricao, double preco) {
         this.id = id;
         this.photo = photo;
         this.nome = nome;
@@ -57,11 +57,11 @@ public class RestauranteDTO {
         this.nome = nome;
     }
 
-    public String getPreco() {
+    public double getPreco() {
         return preco;
     }
 
-    public void setPreco(String preco) {
+    public void setPreco(double preco) {
         this.preco = preco;
     }
 }
