@@ -5,4 +5,6 @@ import org.springframework.stereotype.Repository;
 import ufpb.poo.restaurante.restaurante.dto.RestauranteDTO;
 @Repository
 public interface RepoJPA extends JpaRepository<RestauranteDTO, Long> {
+
+
 }
