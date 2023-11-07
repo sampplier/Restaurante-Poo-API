@@ -16,7 +16,7 @@ import java.util.List;
 public class RestauranteController {
     @Autowired
     private RestauranteFacade restauranteFacade;
-    @PostMapping("/post")
+    @PostMapping
     @ResponseBody
     public RestauranteDTO criar(@RequestBody RestauranteDTO restauranteDTO){
         return restauranteFacade.criar(restauranteDTO);
@@ -26,7 +26,7 @@ public class RestauranteController {
     public RestauranteDTO atualizar(@PathVariable("restauranteId") Long restauranteId, @RequestBody RestauranteDTO restauranteDTO){
         return restauranteFacade.atualizar(restauranteDTO, restauranteId);
     }
-    @GetMapping("pratos")
+    @GetMapping
     @ResponseBody
     public List<RestauranteDTO> getAll(){
         return restauranteFacade.getAll();
