@@ -1,0 +1,4 @@
+Algumas possiveis melhorias são:
+eliminar números mágicos 
+eliminar métodos ociosos 
+Buscar maior coesão entre as classes
