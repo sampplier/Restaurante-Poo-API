@@ -13,7 +13,7 @@ import java.util.Map;
 
 @Controller
 @RequestMapping(value = "/restaurante",produces = MediaType.APPLICATION_JSON_VALUE)
-@CrossOrigin(origins = {"http://localhost:3000", "https://front-poo-five.vercel.app", "http://localhost:8080"})
+@CrossOrigin(origins = {"http://localhost:3000", "https://front-poo-five.vercel.app", "http://localhost:8080", "*"})
 public class RestauranteController {
     @Autowired
     private RestauranteFacade restauranteFacade;

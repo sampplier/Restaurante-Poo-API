@@ -20,7 +20,7 @@ import java.util.Map;
 
 @Controller()
 @RequestMapping(value = "/auth")
-@CrossOrigin(origins = {"http://localhost:3000", "https://front-poo-five.vercel.app", "http://localhost:8080"})
+@CrossOrigin(origins = {"*"}, allowedHeaders = {"*"})
 public class AuthController {
 
     private static final long serialVersionUID = -2550185165626007488L;
