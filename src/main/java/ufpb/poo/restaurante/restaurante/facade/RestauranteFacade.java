@@ -8,7 +8,7 @@ import org.springframework.stereotype.Service;
 import java.util.List;
 
 @Service
-public class RestauranteFacade {
+public class RestauranteFacade implements RestauranteInterfaceFacade{
     @Autowired
     private RepoJPA repoJPA;
 
